@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>فروشگاه کفش</title>
+</head>
+
+<body>
+ 
+  <div class="top-header">
+    <nav class="row">
+        
+        <h1 class="title" style="text-align: center; margin-top: 10px;">shoes shop</h1>
+      
+     <div class="top-header">
+            <div class="btn" style="margin-right: 20px;">
+               
+                <button class="sign ">
+                    <a href="accounting.html">
+                        عضویت
+                    </a>
+                    
+                </button>
+                
+                <button class="login " style="margin-top: 10px !important;">
+                    <a href="accounting.html">ورود</a>
+                    
+                </button>
+            </div>
+            <div class="search-box" style="margin-left: 20px;">
+               
+                <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+
+              
+              </div>
+              
+     </div>
+     
+    </nav>
+</div>
+    <br/>
+    <div class="menu ">
+        <ul class="list">
+            <li>
+              <a href="home.html"> خانه </a> 
+            </li>
+            <li>
+                <a href="product.html">محصولات </a> 
+                
+            </li>
+         
+            <li>
+                <a href="#"> دسته بندی ها </a> 
+               
+            </li>
+            <li>
+                <a href="accounting.html">ثبت نام  </a> 
+                
+            </li>
+            <li>
+                <a href="#">برندها</a> 
+          
+            </li>
+        </ul>
+      </div>
+      <hr class="line"/>
+    <br>
+    <div class="flex-container  ">
+        <div class="btn1-box"><a href="aboutus.html" style="text-decoration: none !important;"><button class="btn1" ><i class="fa fa-home" style="width: 100%;list-style: none;"></i> <span >درباره ما</span></button></a></div>
+        <div class="btn1-box"><a href="" style="text-decoration: none !important;"><button class="btn1"><i class="fa fa-bars" style="width: 100%;"></i> تماس با ما</button></a></div>
+        <div class="btn1-box"><a href="guide.html" style="text-decoration: none !important;"><button class="btn1"><i class="fa fa-trash" style="width: 100%;"></i> راهنمای انتخاب</button></a></div>
+        <div class="btn1-box"><a href="" style="text-decoration: none !important;"><button class="btn1"><i class="fa fa-close"style="width: 100%;"></i> شرایط بازگشت</button></a></div>
+        <div class="btn1-box"><a href="workus.html" style="text-decoration: none !important;"><button class="btn1"><i class="fa fa-folder"style="width: 100%;"></i> تقاضای همکاری</button></a></div>
+        <div class="btn1-box"><a href="" style="text-decoration: none !important;"><button class="btn1"><i class="fa fa-folder"style="width: 100%;"></i> حریم شخصی</button></a></div>
+        
+        
+        
+        
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        
+        <p>شما هنوز ثبت نام نکردید</p>
+        <form id="signup-form" class="popi">
+          <label for="username" class="popi">نام کاربری</label>
+          <input type="text" id="username" name="username" style="background-color: rgba(139, 139, 136, 0.505); border-radius: 15px;" required>
+          <label for="password">رمز عبور</label>
+          <input type="password" id="password" name="password"style="background-color: rgba(139, 139, 136, 0.505); border-radius: 15px;" required>
+          <button type="submit">ثبت نام</button>
+        </form>
+        <span class="close" onclick="closePopup()">&times;</span>
+      </div>
+    </div>
+    <section class="slider " style="position: relative;">
+      <div class=" slides">
+          <div class="item active" id="slide1">
+              <img src="./image/teahub.io-cheerful-wallpaper-3313901.jpg" alt="img-slide1">
+              <span>خریدی آسان و لذت بخش</span>
+          </div>
+          <div class="item" id="slide2">
+              <img src="./image/teahub.io-light-wallpaper-download-1560870.jpg" alt="img-slide2">
+              <span>خریدی به قیمت </span>
+          </div>
+          <div class="item" id="slide3">
+              <img src="./image/teahub.io-wallpaper-for-friends-group-1330912.jpg" alt="img-slide3">
+              <span>محصولات با کیفیت </span>
+          </div>
+
+      </div>
+      <div class="buttons">
+          <i onclick="setSlide('slide1',1)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide2',2)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide3',3)" class="fas fa-circle"></i>
+
+      </div>
+      </section>
+
+    <section class="section-products">
+      <div class="container">
+          <div class="row justify-content-center text-center">
+              <div class="col-md-8 col-lg-6">
+
+                  <div class="header">
+                      <h3>محصولات</h3>
+                      <h2>محبوب ترین ها</h2>
+                      <div class="khat"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-1" class="single-product">
+                      <div class="part-1">
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""id="expand-link"><i class="fas fa-expand hover-shadow cursor" onclick="openModal();currentSlide(1)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 201</h3>
+                          <h4 class="product-old-price">79.99</h4>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-2" class="single-product">
+                      <div class="part-1">
+                          <span class="discount">15% off</span>
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand hover-shadow cursor"  onclick="openModal();currentSlide(2)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 202</h3>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-3" class="single-product">
+                      <div class="part-1">
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(3)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 203</h3>
+                          <h4 class="product-old-price">79.99</h4>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-4" class="single-product">
+                      <div class="part-1">
+                          <span class="new">new</span>
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(4)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 204</h3>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-5" class="single-product">
+                      <div class="part-1">
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(5)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 205</h3>
+                          <h4 class="product-old-price">79.99</h4>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-6" class="single-product">
+                      <div class="part-1">
+                          <span class="discount">15% off</span>
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(6)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 205</h3>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-7" class="single-product">
+                      <div class="part-1">
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(7)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 206</h3>
+                          <h4 class="product-old-price">79.99</h4>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Product -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-8" class="single-product">
+                      <div class="part-1">
+                          <span class="new">new</span>
+                          <ul>
+                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                              <li><a href=""><i class="fas fa-expand  hover-shadow cursor" onclick="openModal();currentSlide(8)"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="part-2">
+                        <div class="stars">
+                          <i class='fas fa fa-star ' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                          <i class='fas fa fa-star' onclick="changeColor(this)"></i>
+                         </div>
+                          <h3 class="product-title">کفش کد 207</h3>
+                          <h4 class="product-price">49.99</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </section>
+
+
+ <!-- cards  -->
+ <div id="authors" class="author">
+  <div class="jumbotron">
+    <div class="col-12">
+      <h2 class="title text-center">تیم فنی</h2>
+      <div class="khat1"></div>
+
+      <div class="underline " style="margin-bottom: 3rem !important; margin-top: 5rem !important;"></div>
+      <div class="container text-center pt-3">
+        <div class="row">
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 crd">
+
+            <div class="card ">
+              <div class="card-body">
+
+                <img src="image/four1.jpg" class=" rounded-circle w-50 " alt="">
+                <h3>مهدی عباسی </h3>
+                <h5>توسعه دهنده بک اند</h5>
+                <p class="paraghraph"> کارشناس ارشد مهندسی نرم افزار و فعال در تیم توسعه شرکت همراه اول ،دارای تجربه
+                  در پروژه های بزرگ شرکتی. </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a id="myLink" href="https://www.linkedin.com/in/mahdi-abbasi-a25212201">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-twitter-square"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 crd">
+
+            <div class="card ">
+              <div class="card-body">
+
+                <img src="image/four1.jpg" class=" rounded-circle w-50 " alt="">
+                <h3>مهدی عباسی </h3>
+                <h5>توسعه دهنده بک اند</h5>
+                <p class="paraghraph"> کارشناس ارشد مهندسی نرم افزار و فعال در تیم توسعه شرکت همراه اول ،دارای تجربه
+                  در پروژه های بزرگ شرکتی. </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a id="myLink" href="https://www.linkedin.com/in/mahdi-abbasi-a25212201">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-twitter-square"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 crd">
+
+            <div class="card ">
+              <div class="card-body">
+
+                <img src="image/four1.jpg" class=" rounded-circle w-50 " alt="">
+                <h3>مهدی عباسی </h3>
+                <h5>توسعه دهنده بک اند</h5>
+                <p class="paraghraph"> کارشناس ارشد مهندسی نرم افزار و فعال در تیم توسعه شرکت همراه اول ،دارای تجربه
+                  در پروژه های بزرگ شرکتی. </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a id="myLink"  href="https://www.linkedin.com/in/mahdi-abbasi-a25212201">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-twitter-square"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12  crd">
+
+            <div class="card ">
+              <div class="card-body">
+
+                <img src="image/four1.jpg" class=" rounded-circle w-50 " alt="">
+                <h3>مهدی عباسی </h3>
+                <h5>توسعه دهنده بک اند</h5>
+                <p class="paraghraph"> کارشناس ارشد مهندسی نرم افزار و فعال در تیم توسعه شرکت همراه اول ،دارای تجربه
+                  در پروژه های بزرگ شرکتی. </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a id="myLink" href="https://www.linkedin.com/in/mahdi-abbasi-a25212201">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                  
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-twitter-square"></i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="">
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end cards -->
+
+    <!-- footer -->
+    <div class="footer">
+        
+        <div class="content">
+          <div class="services">
+            <h4>خدمات مشتریان</h4>
+            <p><a href="#">سوالات متداول</a></p>
+            <p><a href="#">بازگرداندن کالا</a></p>
+            <p><a href="#">شرایط استفاده</a></p>
+            <p><a href="#">حریم شخصی</a></p>
+          </div>
+          <div class="social-media">
+            <h4>اطلاعات ما</h4>
+            <p>
+              <a href="#"> درباره ما</a>
+            </p>
+            <p>
+              <a href="#" > تماس با ما </a >
+            </p>
+           
+          </div>
+          <div class="links">
+            <p style="font-weight:300;">در شبکه های اجتماعی به ما بپیوندید</p>
+                <div>
+                    <i class="fa fa-gg-circle" ></i>
+                    <i class="fa fa-google-plus-official " ></i>
+                    <i class="fa fa-github " ></i>
+                </div>
+                <div>
+                    <i class="fa fa-gg-circle" ></i>
+                    <i class="fa fa-google-plus-official " ></i>
+                    <i class="fa fa-github " ></i>
+                </div>
+          </div>
+          <div class="details">
+            
+            <p style="text-align: justify; padding-top: 20px;">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،<br/>
+                 و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه <br/>
+                 روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                  و برای شرایط فعلی تکنولوژی مورد نیاز.
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./js/script.js"></script>
+
+</body>
+</html>

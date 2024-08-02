@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+<link rel="stylesheet" href="./css/productstyle.css">
+ <!-- fontawesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- bootstrap css -->
+ <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>فروشگاه کفش</title>
+</head>
+<body>
+  
+    <div class="top-header">
+        <nav class="row">
+            
+            <h1 class="title" style="text-align: center; margin-top: 10px;">shoes shop</h1>
+          
+         <div class="top-header">
+                <div class="btn" style="margin-right: 20px;">
+                   
+                    <button class="sign ">
+                        <a href="accounting.html">
+                            عضویت
+                        </a>
+                        
+                    </button>
+                    
+                    <button class="login ">
+                        <a href="accounting.html">ورود</a>
+                        
+                    </button>
+                </div>
+                <div class="search-box" style="margin-left: 20px;">
+                   
+                    <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+
+                  
+                  </div>
+                  
+         </div>
+         
+        </nav>
+    </div>
+    <br/>
+    <div class="menu ">
+        <ul class="list">
+            <li>
+              <a href="home.html"> خانه </a> 
+            </li>
+            <li>
+                <a href="#">محصولات </a> 
+                
+            </li>
+            
+            <li>
+                <a href="#"> دسته بندی ها </a> 
+               
+            </li>
+            <li>
+                <a href="accounting.html">ثبت نام  </a> 
+                
+            </li>
+            <li>
+                <a href="#">برندها</a> 
+          
+            </li>
+        </ul>
+      </div>
+      <hr class="line"/>
+    <br>
+    <div class="flex-container  ">
+        <div class="btn1-box"><a href="aboutus.html"><button class="btn1" ><i class="fa fa-home" style="width: 100%;"></i> درباره ما</button></a></div>
+        <div class="btn1-box"><a href=""><button class="btn1"><i class="fa fa-bars" style="width: 100%;"></i> تماس با ما</button></a></div>
+        <div class="btn1-box"><a href="guide.html"><button class="btn1"><i class="fa fa-trash" style="width: 100%;"></i> راهنمای انتخاب</button></a></div>
+        <div class="btn1-box"><a href=""><button class="btn1"><i class="fa fa-close"style="width: 100%;"></i> شرایط بازگشت</button></a></div>
+        <div class="btn1-box"><a href="workus.html"><button class="btn1"><i class="fa fa-folder"style="width: 100%;"></i> تقاضای همکاری</button></a></div>
+        <div class="btn1-box"><a href=""><button class="btn1"><i class="fa fa-folder"style="width: 100%;"></i> حریم شخصی</button></a></div>
+        
+        
+        
+        
+    </div>
+    <style>
+      
+        </style>
+        <body>
+   
+
+
+        <h2 style="text-align:center">توضیحات محصول</h2>
+        <div class="khat"></div>
+
+        <div class="row satr">
+          <div class="column">
+            <img src="image/shoes.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="image/shoes2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="image/shoes3.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="image/shoes4.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img class="img_slider" src="image/shoes.jpg" style="width:50% ;">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img class="img_slider" src="image/shoes1.jpg" style="width:50%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img class="img_slider" src="image/shoes2.jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img class="img_slider" src="image/shoes3.jpg" style="width:50%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="image/shoes.jpg" style="width:100%" onclick="currentSlide(1)" alt="کفش مدل  201 <br>سایزبندی از 34 تا 44">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/shoes1.jpg" style="width:100%" onclick="currentSlide(2)"  alt="کفش مدل  202 <br>سایزبندی از 34 تا 44">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/shoes2.jpg" style="width:100%" onclick="currentSlide(3)"  alt="کفش مدل  203 <br>سایزبندی از 34 تا 44">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/shoes3.jpg" style="width:100%" onclick="currentSlide(4)"  alt="کفش مدل  204 <br>سایزبندی از 34 تا 44">
+            </div>
+          </div>
+        </div>
+        <h2 style="text-align:center ; margin-top: 100px;">مدل های موجود</h2>
+        <div class="khat"></div>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <!-- Product 1 -->
+            <div class="product">
+              <img src="./image/shoes.jpg" alt="Product 1">
+              <h4>کفش مدل 201</h4>
+              <p class="price">$10</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 2 -->
+            <div class="product">
+              <img src="./image/shoes1.jpg" alt="Product 2">
+              <h4>کفش مدل 202</h4>
+              <p class="price">$15</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 3 -->
+            <div class="product">
+              <img src="./image/shoes2.jpg" alt="Product 3">
+              <h4>کفش مدل 203</h4>
+              <p class="price">$20</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 4 -->
+            <div class="product">
+              <img src="./image/shoes3.jpg" alt="Product 4">
+              <h4>کفش مدل 204</h4>
+              <p class="price">$25</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 5 -->
+            <div class="product">
+              <img src="./image/shoes4.jpg" alt="Product 5">
+              <h4>کفش مدل 205</h4>
+              <p class="price">$30</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 6 -->
+            <div class="product">
+              <img src="./image/shoes5.jpg" alt="Product 6">
+              <h4>کفش مدل 206</h4>
+              <p class="price">$35</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 7 -->
+            <div class="product">
+              <img src="./image/shoes6.jpg" alt="Product 7">
+              <h4>کفش مدل 207</h4>
+              <p class="price">$40</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 8 -->
+            <div class="product">
+              <img src="./image/shoes7.jpg" alt="Product 8">
+              <h4>کفش مدل 208</h4>
+              <p class="price">$45</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 9 -->
+            <div class="product">
+              <img src="./image/shoes8.jpg" alt="Product 9">
+              <h4>کفش مدل 209</h4>
+              <p class="price">$50</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 5 -->
+            <div class="product">
+              <img src="./image/shoes4.jpg" alt="Product 5">
+              <h4>کفش مدل 300</h4>
+              <p class="price">$30</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 6 -->
+            <div class="product">
+              <img src="./image/shoes5.jpg" alt="Product 6">
+              <h4>کفش مدل 301</h4>
+              <p class="price">$35</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <!-- Product 7 -->
+            <div class="product">
+              <img src="./image/shoes6.jpg" alt="Product 7">
+              <h4>کفش مدل 302</h4>
+              <p class="price">$40</p>
+              <input type="number" class="quantity" min="0" value="0">
+              <button class="add-to-cart">افزودن به سبدخرید</button>
+            </div>
+          </div>
+        </div>
+
+<br>
+        <div class="shopping-box">
+          <h3>سبد خرید</h3>
+          <ul class="cart-items">
+          </ul>
+          <hr>
+          <p class="total-price">قیمت کل: $0</p>
+        </div>
+     
+    <!-- footer -->
+    <div class="footer">
+        
+        <div class="content">
+          <div class="services">
+            <h4>خدمات مشتریان</h4>
+            <p><a href="#">سوالات متداول</a></p>
+            <p><a href="#">بازگرداندن کالا</a></p>
+            <p><a href="#">شرایط استفاده</a></p>
+            <p><a href="#">حریم شخصی</a></p>
+          </div>
+          <div class="social-media">
+            <h4>اطلاعات ما</h4>
+            <p>
+              <a href="#"> درباره ما</a>
+            </p>
+            <p>
+              <a href="#" > تماس با ما </a >
+            </p>
+           
+          </div>
+          <div class="links">
+            <p style="font-weight:300;">در شبکه های اجتماعی به ما بپیوندید</p>
+                <div>
+                    <i class="fa fa-gg-circle" ></i>
+                    <i class="fa fa-google-plus-official " ></i>
+                    <i class="fa fa-github " ></i>
+                </div>
+                <div>
+                    <i class="fa fa-gg-circle" ></i>
+                    <i class="fa fa-google-plus-official " ></i>
+                    <i class="fa fa-github " ></i>
+                </div>
+          </div>
+          <div class="details">
+            
+            <p style="text-align: justify; padding-top: 20px;">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،<br/>
+                 و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه <br/>
+                 روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                  و برای شرایط فعلی تکنولوژی مورد نیاز.
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+
+// Get all the add-to-cart buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+// Get the cart items element
+const cartItemsElement = document.querySelector('.cart-items');
+
+// Get the total price element
+const totalPriceElement = document.querySelector('.total-price');
+
+// Initialize cart items and total price
+let cartItems = [];
+let totalPrice = 0;
+
+// Add event listeners to each add-to-cart button
+addToCartButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const product = button.parentNode;
+    const productImg = product.querySelector('img');
+    const productName = product.querySelector('h4').textContent;
+    const productPrice = parseFloat(product.querySelector('.price').textContent.slice(1));
+    const productQuantity = parseInt(product.querySelector('.quantity').value);
+
+    // Check if the product is already in the cart
+    const existingCartItem = cartItems.find(item => item.name === productName);
+
+    if (existingCartItem) {
+      // Update the quantity if the product is already in the cart
+      existingCartItem.quantity += productQuantity;
+      existingCartItem.totalPrice += productPrice * productQuantity;
+    } else {
+      // Add the product to the cart
+      const cartItem = {
+        name: productName,
+        price: productPrice,
+        quantity: productQuantity,
+        totalPrice: productPrice * productQuantity,
+        image: productImg.src
+      };
+      cartItems.push(cartItem);
+    }
+
+    // Update the cart items UI
+    renderCartItems();
+
+    // Update the total price
+    calculateTotalPrice();
+  });
+});
+
+// Function to render the cart items in the UI
+function renderCartItems() {
+  cartItemsElement.innerHTML = '';
+
+  cartItems.forEach((item, index) => {
+    const cartItemElement = document.createElement('li');
+    cartItemElement.classList.add('cart-item');
+
+    const itemImg = document.createElement('img');
+    itemImg.src = item.image;
+    itemImg.alt = item.name;
+
+    const itemInfo = document.createElement('div');
+    itemInfo.innerHTML = `
+      <h5>${item.name}</h5>
+      <p>$${item.price} x ${item.quantity}</p>
+    `;
+
+    const itemTotalPrice = document.createElement('p');
+    itemTotalPrice.textContent = `$${item.totalPrice}`;
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'حذف';
+    removeButton.addEventListener('click', () => {
+      cartItems.splice(index, 1); // Remove the item from the cart
+      renderCartItems(); // Update the cart items UI
+      calculateTotalPrice(); // Update the total price
+    });
+
+    cartItemElement.appendChild(itemImg);
+    cartItemElement.appendChild(itemInfo);
+    cartItemElement.appendChild(itemTotalPrice);
+    cartItemElement.appendChild(removeButton);
+
+    cartItemsElement.appendChild(cartItemElement);
+  });
+}
+
+// Function to calculate the total price
+function calculateTotalPrice() {
+  totalPrice = cartItems.reduce((total, item) => total + item.totalPrice, 0);
+  totalPriceElement.textContent = `قیمت کل: $${totalPrice.toFixed(2)}`;
+}
+        </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+</body>
+</html>

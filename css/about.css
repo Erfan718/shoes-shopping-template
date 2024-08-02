@@ -1,0 +1,13 @@
+.about{
+    height: auto;
+    width: 80%;
+    border: 4px dotted gray;
+margin: 0 auto;
+}
+.about h1{
+    padding: 10px;
+}
+
+.footer{
+    margin-top: 20px;
+}

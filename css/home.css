@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    color: #444444;
+ overflow-x: hidden;
+}
+/* popup  */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+   
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 5px;
+    position: relative;
+
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  .signup-form{
+    margin: 0 auto;
+  }
+ .popi label, input, button {
+    display: block;
+    margin: 0 auto !important;
+    margin-bottom: 20px;
+    
+  }
+  
+  .popi button {
+    padding: 10px;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px !important;
+  }
+  
+  .popi button:hover {
+    background-color: #005a70;
+  }
+/* slider section */
+
+.slider{
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+
+.btn1-box{
+    margin: 8px !important;
+}
+
+.slider .sliders{
+    width:100%;
+    justify-content: center;
+align-items: center;
+}
+.item {
+position: relative;
+display:none;
+
+}
+.item img {
+width: 100% !important;
+height: 900px;
+align-items: center;
+object-fit: cover;
+
+}
+.item span{
+position: absolute;
+z-index: 1;
+right: 10%;
+top: 60%;
+font-size:3em;
+font-weight:500;
+color: #ffffff;
+text-shadow: 0.1rem 0.1rem 0.5rem #000;
+
+}
+.active{
+display: block;
+animation-name: fadeIn;
+animation-duration: 1s;
+}
+.buttons{
+
+position: absolute;
+bottom: 30px;
+left: 40px;
+z-index: 1;
+}
+
+.slider .buttons i{
+ border: #ffffff solid 1px;
+ border-radius: 50%;
+color: rgba(111, 111, 111, 0.603);
+margin-right: 5px;
+cursor: pointer;
+}
+.slider .buttons i:hover{
+    color: #333;
+}
+
+
+
+
+
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+margin-bottom: 20px;
+}
+.khat {
+    border: none;
+    background-color: blue;
+    height: 2px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .khat1{
+    border: none;
+    background-color: blue;
+    height: 2px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+    word-spacing:-0.2em;
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #7a7a7a1d;
+}
+.section-products .single-product .part-1:hover{
+    border: 1px solid gray;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("../image/shoes.jpg") no-repeat center;
+    background-size:contain;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("../image/shoes1.jpg") no-repeat center;
+    background-size:contain;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("../image/shoes2.jpg") no-repeat center;
+    background-size:contain;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("../image/shoes3.jpg") no-repeat center;
+    background-size:contain;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("../image/shoes4.jpg") no-repeat center;
+    background-size:contain;
+		transition: all 0.3s;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("../image/shoes5.jpg") no-repeat center;
+    background-size:contain;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("../image/shoes6.jpg") no-repeat center;
+    background-size:contain;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("../image/shoes7.jpg") no-repeat center;
+    background-size:contain;
+}
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+/* Author */
+#authors .jumbotron {
+    padding: 1rem 0 3rem;
+
+}
+
+.author .card {
+    margin-top: 4rem;
+    border-radius: 0;
+    box-shadow: 3px 2px 5px #1ebba3;
+    margin: 1rem 0;
+
+
+}
+
+.author .card:hover {
+    /* background-color: #199885; */
+    background-image: linear-gradient(90deg, #1b8b87fd 5%, #127196f0 50%, #00d5ff38 120%);
+}
+
+.author .card:hover i,
+.author .card:hover h3,
+.author .card:hover p {
+    color: white;
+}
+
+.card-body h3 {
+    position: relative;
+    color: #3e3a3a;
+    font-family: 'YekanFD';
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+
+    padding-bottom: 0.6rem;
+}
+
+.card-body img {
+    margin-top: -6rem;
+
+}
+
+.crd {
+    margin-bottom: 50px;
+    align-items: center !important;
+}
+
+.card-body i {
+    color: #00000074;
+    font-size: 1.8rem;
+}
+
+.card-body i:hover {
+    color: #000 !important;
+    animation: alternate !important;
+}
+
+/* End author */

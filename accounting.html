@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت نام</title>
+    <link rel="shortcut icon" href="image/logo.png">
+
+    <link rel="icon" href="images/logo/logo-color11.png " type="image/icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/loginreg.css">
+</head>
+
+<body class="rtl">
+    
+    <div class="main-box" style="margin-top: 0 !important;">
+        <div class="back_index" style="margin-top: 0;">
+            <a href="index.html" style=" margin-bottom: 10px;">
+            <button type="submit"  class="btn-info " style="padding: 0.5rem; margin: 0.5rem;border-style: none;border-radius: 1.8rem; position: relative;">بازگشت </button>
+            </a>
+        </div>
+        <div class="form-box password-input-container">
+            <div class="button-box">
+                <div id="account-btn"></div>
+                <button type="button" class="toggle-btn" onclick="Register()">ثبت نام</button>
+                <button type="button" class="toggle-btn" style="margin-right: 0.8rem;" onclick="Login()">ورود</button>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-github "></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <form action="/login"method="POST" enctype="multipart/form-data" id="login" class="input-group">
+                <input type="text" name="username" class="input-field" placeholder="نام کاربری " style="padding-right:20px ; "
+                    required>
+                <input id="passwordInput" type="password" name="password" class="input-field" placeholder="رمز عبور "
+                    style="padding-right:20px ; padding: bottom 100px;" onclick=" togglePasswordVisibility()" required >
+                <span id="togglePassword">
+                    <!-- <i class="fa fa-eye icon" id="eyeIcon" aria-hidden="true" onclick=" togglePasswordVisibility() "></i> -->
+                </span>
+                <input type="checkbox" class="check-box"><span style="margin-top: 2px;">مرا به خاطر بسپار</span>
+                <button type="submit" class="submit-btn">ورود</button>
+                <span class="res ">
+                   
+                   
+                       
+                </span>
+
+          
+            </form>
+
+            <form action="/register"method="POST" enctype="multipart/form-data" id="register" class="input-group">
+                <input type="text" name="username" class="input-field" placeholder="نام کاربری " style="padding-right:20px ;"
+                    required>
+                <input id="passwordInput2" type="password" name="password" class="input-field" placeholder="رمز عبور " 
+                    style="padding-right:20px ; padding: bottom 100px;"onclick=" togglePasswordVisibility()" required >
+                <span id="togglePassword" >
+                    <!-- <i class="fa fa-eye icon" id="eyeIcon" aria-hidden="true"  onclick=" togglePasswordVisibility()"></i> -->
+                </span>
+                <input type="email" name="" class="input-field" placeholder="ایمیل" style="padding-right:20px ;"
+                    required>
+             <span class="check-span">  <input type="checkbox" class="check-box"><span style="margin-top: 2px; color: #000; font-weight: 600;">قوانین و مقررات سایت را می پذیرم</span></span>  
+                
+                <button type="submit" class="submit-btn">ثبت نام</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/loginreg.js"></script>
+    <script src="js/server.js"></script>
+
+    
+</body>
+
+</html>
+
